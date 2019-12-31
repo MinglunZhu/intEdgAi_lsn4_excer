@@ -10,11 +10,11 @@ You will need OpenVINO installed, and you will also need to change the hardcoded
 ### Model
 The model I used is the pre-trained model `vehicle-detection-adas-binary-0001` from the OpenVINO model zoo, which is already converted to the OpenVINO intermediate representation.
 
-### Parameter
+### Parameters
 The program allows you to choose the input video, the confidence threshhold for detected vehicles, and the color of the bounding box. Use `-h` to see how to see parameter info.
 
 ## Example Output
-The program takes in a video, by default, the provided test video, and outputs video with bounding boxes drawn with confidence threshold of `.5`. And example output video is provided in the `Example Output` folder which used confidence threshold of `.9`.
+The program takes in a video, by default, the provided test video, and outputs video with bounding boxes drawn with confidence threshold of `.5`. An example output video is provided in the `Example Output` folder which used confidence threshold of `.9`.
 
 ## License
 

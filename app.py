@@ -53,7 +53,9 @@ def convert_color(col):
         return color
     else:
         return COLORS['BLUE']
-    
+
+THICK = 2
+
 def draw_boxes(frame, boxes, width, height, conf, col):
     '''
     Draw bounding boxes onto the frame.
@@ -67,7 +69,8 @@ def draw_boxes(frame, boxes, width, height, conf, col):
             xmax = int(box[5] * width)
             ymax = int(box[6] * height)
             
-            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), col, 1)
+            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), col, THICK)
+            cv2.putText(frame, str(box[1]), (xmin, ymax), cv2.FONT_HERSHEY_SIMPLEX, 1, col, THICK)
             
     return frame
 

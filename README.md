@@ -10,6 +10,8 @@ You will need OpenVINO installed, and you will also need to change the hardcoded
 ### Model
 The model I used is the pre-trained model `vehicle-detection-adas-binary-0001` from the OpenVINO model zoo, which is already converted to the OpenVINO intermediate representation.
 
+This model is not very good as you can see from its outputs - you have to set confidence threshold to really high in order to reduce misclassifications, but in return you also have fewer detected vehicles, so not all vehicles are detected.
+
 ### Parameters
 The program allows you to choose the input video, the confidence threshhold for detected vehicles, and the color of the bounding box. Use `-h` to see the parameter info.
 
